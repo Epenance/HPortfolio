@@ -285,6 +285,19 @@ nav.navbar {
 
     .sub_title {
       margin-bottom:40px;
+
+      @media screen and (max-width: $break-medium) {
+        width:90%;
+        margin:auto;
+        margin-bottom:40px;
+      }
+    }
+
+    .title {
+      @media screen and (max-width: $break-medium) {
+        width:90%;
+        margin:auto;
+      }
     }
 
 
