@@ -1,0 +1,77 @@
+@import "vars";
+
+.btn {
+  padding:10px 15px;
+  border:1px solid;
+  text-decoration:none;
+  text-transform:uppercase;
+  display:inline-block;
+  @include trans;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  &:hover {
+    background:$second-color;
+    border-color:transparent!important;
+  }
+
+  &.btn_white {
+    border-color:white;
+    color:white;
+  }
+}
+
+.bold {
+  font-weight:bold;
+}
+
+.dark_overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  z-index:2;
+  background: rgba(23, 27, 30, 0.2);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(23,27,30,0.2) 0%, rgba(23,27,30,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(23,27,30,0.2)), color-stop(100%, rgba(23,27,30,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(23,27,30,0.2) 0%, rgba(23,27,30,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(23,27,30,0.2) 0%, rgba(23,27,30,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(23,27,30,0.2) 0%, rgba(23,27,30,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(23,27,30,0.2) 0%, rgba(23,27,30,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191919', endColorstr='#191919', GradientType=1 );
+}
+
+.content_center {
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  margin: 0 auto;
+  width: 100%;
+  z-index: 3;
+
+  .content {
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+  }
+}
+
+.row {
+  position:relative;
+}
+
+.title {
+  font-family: $font_main;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-top: 0;
+  text-transform:uppercase;
+}
+
+.sub_title {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}

@@ -14,7 +14,7 @@ module.exports = function(grunt) {
           cwd: 'slim',
           src: ['{,*/}*.slim'],
           dest: 'www',
-          ext: '.html'
+          ext: '.php'
         }]
       }
     },
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     watch: {
       //Watching all the .slim files in the project
       slimfiles: {
-      files: '{,*/}*.slim',
+      files: 'slim/**/*.slim',
       tasks:['slim']
       },
       scssfiles: {
