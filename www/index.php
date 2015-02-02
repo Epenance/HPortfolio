@@ -10,7 +10,7 @@
     <nav class="navbar">
       <div class="container">
         <div id="title">
-          <a href="#"><span>M</span>artin <span>H</span>obert</a>
+          <a href="#top_content"><span>M</span>artin <span>H</span>obert</a>
         </div>
         <div id="mobile_toggle">
           <div class="bar"></div>
@@ -185,7 +185,7 @@
     </section>
     <section id="work">
       <div class="y_half row">
-        <div class="work">
+        <div class="work" style="background-image: url(img/content/preadly.jpg);">
           <div class="content_center">
             <div class="content">
               <a class="btn btn_white" href="#">Preadly</a>
@@ -193,7 +193,7 @@
           </div>
           <div class="dark_overlay"></div>
         </div>
-        <div class="work">
+        <div class="work" style="background-image: url(img/content/washa.jpg);">
           <div class="content_center">
             <div class="content">
               <a class="btn btn_white" href="#">Washa</a>
@@ -201,7 +201,7 @@
           </div>
           <div class="dark_overlay"></div>
         </div>
-        <div class="work">
+        <div class="work" style="background-image: url(img/content/pdm.jpg);">
           <div class="content_center">
             <div class="content">
               <a class="btn btn_white" href="#">Partnerdialog</a>
@@ -209,7 +209,7 @@
           </div>
           <div class="dark_overlay"></div>
         </div>
-        <div class="work">
+        <div class="work" style="background-image: url(img/content/pls.jpg);">
           <div class="content_center">
             <div class="content">
               <a class="btn btn_white" href="#">Project Lightstyle</a>

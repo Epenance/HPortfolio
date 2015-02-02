@@ -178,7 +178,7 @@ nav.navbar {
 #top_content {
   width:100%;
   height:100vh;
-  background-image:url(https://unsplash.it/1900/1000?random);
+  background-image:url(../img/content/mainbg.jpg);
   background-position:center center;
   background-size:cover;
   background-attachment: fixed;
@@ -328,9 +328,9 @@ nav.navbar {
           float:left;
           margin:10px;
           width:calc(25% - 30px);
+          min-width:200px;
           height:330px;
           @include box-shadow-depth1;
-          min-width:200px;
           @include trans;
           padding:20px;
           text-align:center;
@@ -400,9 +400,16 @@ section#work {
       float:left;
       height:100%;
       width:25%;
-      background-image:url(https://unsplash.it/800/800?random);
       background-position:center center;
       background-size:cover;
+      z-index:9;
+      @include trans;
+      @include box-shadow-depth1;
+
+      &:hover {
+        @include box-shadow-depth2;
+        //z-index:10;
+      }
 
       @media screen and (max-width: $break-large) {
         width:50%;
@@ -418,18 +425,6 @@ section#work {
       .dark_overlay {
         opacity:0.5;
       }
-
-      &:nth-child(2) {
-        background-image:url(https://unsplash.it/801/801?random);
-      }
-
-      &:nth-child(3) {
-        background-image:url(https://unsplash.it/802/802?random);
-      }
-
-      &:nth-child(4) {
-        background-image:url(https://unsplash.it/803/803?random);
-      }
     }
   }
 
@@ -437,7 +432,6 @@ section#work {
     background-image:url(https://unsplash.it/1603/803?random);
     background-position:center center;
     background-size:cover;
-    //background-attachment: fixed;
     position:relative;
     clear:both;
     overflow:hidden;
