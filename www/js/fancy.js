@@ -1,11 +1,68 @@
+$(function() {
+  var iOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
+  if(iOS){
+
+    function iosVhHeightBug() {
+      var height = $(window).height();
+      $("#top_content").css('height', height);
+      $("#work").css('min-height', height);
+      $(".y_half").css('height', height / 2);
+      $(".work").css('height', height);
+      $(".testimonials").css('display', "none");
+      $("#contact").css('display', "none");
+    }
+
+    iosVhHeightBug();
+    $(window).bind('resize', iosVhHeightBug);
+
+  }
+})
+
+$(function() {
+  var querie = 800;
+  var windowWidth = $(window).width();
+  var rightWidth = $(".about_text").height() + 100;
+
+  if(windowWidth > querie) {
+    $(".about_left").height(rightWidth);
+  }else {
+    $(".about_left").height(450);
+  }
+})
+
 $(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 150) {
+    if ($(this).scrollTop() > 80) {
       $('.navbar').addClass("addColor");
-    } else if ($(this).scrollTop() <= 150) {
+    } else if ($(this).scrollTop() <= 80) {
       $('.navbar').removeClass("addColor");
     }
   });
+});
+
+$("#mainmenu li a").click(function() {
+  $(".navbar").stop(true, false).animate({
+    height:80
+  });
+  $(".navbar").removeClass("navOpen");
+})
+
+$( window ).resize(function() {
+  var windowWidth = $(window).width();
+  var querie = 800;
+  var menuClass = $(".navbar").hasClass("navOpen");
+  var rightWidth = $(".about_text").height() + 100;
+
+  if(windowWidth > querie) {
+    $(".about_left").height(rightWidth);
+  }else {
+    $(".about_left").height(450);
+  }
+
+  if(windowWidth > querie && menuClass) {
+    $(".navbar").css("height","")
+    $(".navbar").removeClass("navOpen");
+  }
 });
 
 $("#mobile_toggle").click(function() {
@@ -34,7 +91,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 79
         }, 1000);
         return false;
       }

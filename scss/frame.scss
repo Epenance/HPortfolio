@@ -53,7 +53,7 @@ nav.navbar {
     padding:10px 30px;
 
     @media screen and (max-width: $break-large) {
-      height:75px;
+      height:80px;
       overflow:hidden;
     }
   }
@@ -96,7 +96,7 @@ nav.navbar {
     padding: 15px 15px;
 
     @media screen and (max-width: $break-large) {
-      margin-bottom:15px;
+      margin-bottom:20px;
     }
 
 
@@ -181,10 +181,9 @@ nav.navbar {
   background-image:url(https://unsplash.it/1900/1000?random);
   background-position:center center;
   background-size:cover;
-  background-position:fixed;
+  background-attachment: fixed;
   z-index:1;
-
-
+  position:relative;
 
   h1 {
     color: #fff;
@@ -230,7 +229,6 @@ nav.navbar {
     background-image:url(https://unsplash.it/800/400?random);
     background-position:center center;
     background-size:cover;
-    background-position:fixed;
 
     @media screen and (max-width: $break-large) {
       position:relative;
@@ -366,6 +364,7 @@ nav.navbar {
 
           svg {
             max-width:100px;
+            max-height:100px;
           }
 
           &:hover {
@@ -404,7 +403,6 @@ section#work {
       background-image:url(https://unsplash.it/800/800?random);
       background-position:center center;
       background-size:cover;
-      background-position:fixed;
 
       @media screen and (max-width: $break-large) {
         width:50%;
@@ -415,40 +413,6 @@ section#work {
         height:50vh;
         width:100%;
         float:none;
-      }
-
-      &:hover:after {
-        height:40%;
-        width:80%;
-        border-top:1px solid white;
-        border-bottom:1px solid white;
-      }
-
-      &:hover:before {
-        height:40%;
-        width:80%;
-        border-left:1px solid white;
-        border-right:1px solid white;
-      }
-
-      &:after {
-        width:1px;
-        height:40%;
-      }
-
-      &:before {
-        height:1px;
-        width:80%;
-      }
-
-      &:after, &:before {
-        position:absolute;
-        content:"";
-        top:50%;
-        left:50%;
-        border:1px solid transparent;
-        transform:translateY(-50%) translateX(-50%);
-        @include trans;
       }
 
       .dark_overlay {
@@ -473,7 +437,7 @@ section#work {
     background-image:url(https://unsplash.it/1603/803?random);
     background-position:center center;
     background-size:cover;
-    background-position:fixed;
+    //background-attachment: fixed;
     position:relative;
     clear:both;
     overflow:hidden;
@@ -520,4 +484,7 @@ section#work {
 section#contact {
   background:white;
   padding:90px;
+  float:none;
+  width:100%;
+  height:100px;
 }
