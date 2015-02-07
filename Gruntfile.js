@@ -29,9 +29,9 @@ module.exports = function(grunt) {
     watch: {
       //Watching all the .slim files in the project
       slimfiles: {
-      files: 'slim/**/*.slim',
+      files: 'slim/**/**/*.slim',
       tasks:['slim']
-      },
+    },
       scssfiles: {
         files: '{,*/}*.scss',
         tasks:['compass']

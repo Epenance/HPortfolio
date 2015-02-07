@@ -25,9 +25,6 @@
             <a href="#work">Work</a>
           </li>
           <li>
-            <a href="#">Resumé</a>
-          </li>
-          <li>
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -42,7 +39,7 @@
           <p>
             I turn static designs into fully functional & beautiful websites. I have a passion for CSS transitions and animations.
           </p>
-          <a class="btn btn_white" href="#">Lets talk</a>
+          <a class="btn btn_white" href="#contact">Lets talk</a>
         </div>
       </div>
       <div class="dark_overlay"></div>
@@ -52,7 +49,7 @@
         <div class="about_left">
           <div class="content_center">
             <div class="content">
-              <a class="btn btn_white" href="#">Contact</a>
+              <a class="btn btn_white" href="#contact">Contact</a>
             </div>
           </div>
           <div class="dark_overlay"></div>
@@ -188,7 +185,7 @@
         <div class="work" style="background-image: url(img/content/preadly.jpg);">
           <div class="content_center">
             <div class="content">
-              <a class="btn btn_white" href="#">Preadly</a>
+              <a class="btn btn_white" href="work.php?project=preadly">Preadly</a>
             </div>
           </div>
           <div class="dark_overlay"></div>
@@ -196,7 +193,7 @@
         <div class="work" style="background-image: url(img/content/washa.jpg);">
           <div class="content_center">
             <div class="content">
-              <a class="btn btn_white" href="#">Washa</a>
+              <a class="btn btn_white" href="work.php?project=washa">Washa</a>
             </div>
           </div>
           <div class="dark_overlay"></div>
@@ -204,7 +201,7 @@
         <div class="work" style="background-image: url(img/content/pdm.jpg);">
           <div class="content_center">
             <div class="content">
-              <a class="btn btn_white" href="#">Partnerdialog</a>
+              <a class="btn btn_white" href="work.php?project=partnerdialog">Partnerdialog</a>
             </div>
           </div>
           <div class="dark_overlay"></div>
@@ -212,32 +209,89 @@
         <div class="work" style="background-image: url(img/content/pls.jpg);">
           <div class="content_center">
             <div class="content">
-              <a class="btn btn_white" href="#">Project Lightstyle</a>
+              <a class="btn btn_white" href="work.php?project=projectlightstyle">Project Lightstyle</a>
             </div>
           </div>
           <div class="dark_overlay"></div>
         </div>
       </div>
-      <div class="y_half row testimonials">
-        <div class="dark_overlay"></div>
-        <div class="container">
+      <div class="y_half row">
+        <div class="work" style="background-image: url(img/content/hoberthovers.jpg);">
           <div class="content_center">
             <div class="content">
-              <p>
-                "Nam neque magna, tempus eu dictum vel, laoreet porta lorem. Proin eget lacus efficitur, venenatis odio quis, luctus justo. Cras suscipit nisl a tempor scelerisque. Ut blandit sed magna a cursus. Pellentesque lobortis ligula vel orci eleifend elementum. Phasellus tempor nisl ut nisi aliquam ornare id eget lacus."
-              </p>
-              <h2 class="test_author">
-                Bo <span class="bold">Brink</span>
-              </h2>
-              <p class="sub_title">
-                Marketing Director - <span class="bold">Partnerdialog</span>
-              </p>
+              <a class="btn btn_white" href="work.php?project=hoberthovers">Hobert Hovers</a>
             </div>
           </div>
+          <div class="dark_overlay"></div>
+        </div>
+        <div class="work" style="background-image: url(img/content/mindfullife2.jpg);">
+          <div class="content_center">
+            <div class="content">
+              <a class="btn btn_white" href="work.php?project=mindfullife">Mindfullife</a>
+            </div>
+          </div>
+          <div class="dark_overlay"></div>
+        </div>
+        <div class="work" style="background-image: url(img/content/gamestation.jpg);">
+          <div class="content_center">
+            <div class="content">
+              <a class="btn btn_white" href="work.php?project=gamestation">Game-Station</a>
+            </div>
+          </div>
+          <div class="dark_overlay"></div>
+        </div>
+        <div class="work" style="background-image: url(img/content/you.jpg);">
+          <div class="content_center">
+            <div class="content">
+              <a class="btn btn_white" href="#contact">You?</a>
+            </div>
+          </div>
+          <div class="dark_overlay"></div>
         </div>
       </div>
     </section>
-    <section id="contact"></section>
+    <section id="contact">
+      <div class="row" id="contactHeading">
+        <a href="mailto:info@dosh.dk" id="contactMail"><?php include('svg/mail.php') ?></a>
+      </div>
+      <div class="row">
+        <form>
+          <table id="contactTable">
+            <tr>
+              <td>
+                <input id="contactFirstName" name="contactFirstName" required="" type="text" /><label for="contactFirstName">First Name</label>
+              </td>
+              <td>
+                <input id="contactLastName" name="contactLastName" required="" type="text" /><label for="contactLastName">Last Name</label>
+              </td>
+              <tr></tr>
+              <td>
+                <input id="contactEmail" name="contactEmail" required="" type="text" /><label for="contactEmail">Email</label>
+              </td>
+              <td>
+                <input id="contactPhone" name="contactPhone" required="" type="text" /><label for="contactPhone">Phone</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <textarea id="contactMessage" name="contactMessage" required="" type="text"></textarea><label for="contactMessage">Message</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input class="btn" type="submit" value="send message" />
+                <p class="sub_title">
+                  Or send me a mail at </br><a class="btn" href="mailto:info@dosh.dk">info@dosh.dk</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </section>
+    <footer>
+      © COPYRIGHT 2015 Martin Hobert ALL RIGHTS RESERVED
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/fancy.js"></script>
   </body>

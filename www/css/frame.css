@@ -241,13 +241,89 @@ nav.navbar #mainmenu li a:hover {
   font-family: "Lato", sans-serif;
 }
 
-/* line 218, ../../scss/frame.scss */
+/* line 217, ../../scss/frame.scss */
+#project {
+  width: 100%;
+  height: 55vh;
+  background-image: url(../img/content/mainbg.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  position: relative;
+}
+/* line 227, ../../scss/frame.scss */
+#project h1 {
+  color: white;
+}
+/* line 231, ../../scss/frame.scss */
+#project p {
+  color: white;
+}
+/* line 235, ../../scss/frame.scss */
+#project .bg {
+  display: inline-block;
+  padding: 20px;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  background: #191919;
+}
+
+/* line 243, ../../scss/frame.scss */
+#project_short {
+  width: 100%;
+  max-width: 1200px;
+  padding: 90px 50px;
+  margin: auto;
+}
+/* line 249, ../../scss/frame.scss */
+#project_short table, #project_short tr {
+  width: 100%;
+}
+/* line 253, ../../scss/frame.scss */
+#project_short td {
+  width: 33%;
+  text-align: center;
+  vertical-align: top;
+  padding: 10px;
+}
+@media screen and (max-width: 600px) {
+  /* line 253, ../../scss/frame.scss */
+  #project_short td {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+/* line 266, ../../scss/frame.scss */
+#project_short td h1 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #273138;
+}
+/* line 273, ../../scss/frame.scss */
+#project_short td h2 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 280, ../../scss/frame.scss */
+#project_desc {
+  width: 100%;
+  background: #191919;
+  padding: 90px 0px;
+}
+
+/* line 286, ../../scss/frame.scss */
 #about {
   background-color: #191919;
   position: relative;
   color: #fff;
 }
-/* line 223, ../../scss/frame.scss */
+/* line 291, ../../scss/frame.scss */
 #about .about_left {
   width: 50%;
   height: 100%;
@@ -259,27 +335,27 @@ nav.navbar #mainmenu li a:hover {
   background-size: cover;
 }
 @media screen and (max-width: 800px) {
-  /* line 223, ../../scss/frame.scss */
+  /* line 291, ../../scss/frame.scss */
   #about .about_left {
     position: relative;
     width: 100%;
     height: 500px;
   }
 }
-/* line 240, ../../scss/frame.scss */
+/* line 308, ../../scss/frame.scss */
 #about .about_text {
   width: 50%;
   margin-left: 50%;
   padding: 50px;
 }
 @media screen and (max-width: 800px) {
-  /* line 240, ../../scss/frame.scss */
+  /* line 308, ../../scss/frame.scss */
   #about .about_text {
     width: 100%;
     margin-left: 0px;
   }
 }
-/* line 250, ../../scss/frame.scss */
+/* line 319, ../../scss/frame.scss */
 #about .about_text h2 {
   font-size: 52px;
   letter-spacing: -2px;
@@ -289,23 +365,23 @@ nav.navbar #mainmenu li a:hover {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 800px) {
-  /* line 250, ../../scss/frame.scss */
+  /* line 319, ../../scss/frame.scss */
   #about .about_text h2 {
     font-size: 32px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 250, ../../scss/frame.scss */
+  /* line 319, ../../scss/frame.scss */
   #about .about_text h2 {
     font-size: 24px;
   }
 }
-/* line 267, ../../scss/frame.scss */
+/* line 336, ../../scss/frame.scss */
 #about .about_text p {
   line-height: 1.5;
   margin-bottom: 10px;
 }
-/* line 273, ../../scss/frame.scss */
+/* line 342, ../../scss/frame.scss */
 #about .about_desc {
   width: 100%;
   padding: 50px;
@@ -317,17 +393,17 @@ nav.navbar #mainmenu li a:hover {
   transition: all 0.4s;
 }
 @media screen and (max-width: 600px) {
-  /* line 273, ../../scss/frame.scss */
+  /* line 342, ../../scss/frame.scss */
   #about .about_desc {
     padding: 20px;
   }
 }
-/* line 284, ../../scss/frame.scss */
+/* line 353, ../../scss/frame.scss */
 #about .about_desc .sub_title {
   margin-bottom: 40px;
 }
 @media screen and (max-width: 600px) {
-  /* line 284, ../../scss/frame.scss */
+  /* line 353, ../../scss/frame.scss */
   #about .about_desc .sub_title {
     width: 90%;
     margin: auto;
@@ -335,41 +411,41 @@ nav.navbar #mainmenu li a:hover {
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 294, ../../scss/frame.scss */
+  /* line 363, ../../scss/frame.scss */
   #about .about_desc .title {
     width: 90%;
     margin: auto;
   }
 }
-/* line 302, ../../scss/frame.scss */
+/* line 371, ../../scss/frame.scss */
 #about .about_desc .container {
   max-width: 1170px;
   width: 100%;
   padding: 15px;
 }
 @media screen and (max-width: 600px) {
-  /* line 307, ../../scss/frame.scss */
+  /* line 376, ../../scss/frame.scss */
   #about .about_desc .container h2 {
     font-size: 32px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 307, ../../scss/frame.scss */
+  /* line 376, ../../scss/frame.scss */
   #about .about_desc .container h2 {
     font-size: 24px;
   }
 }
-/* line 317, ../../scss/frame.scss */
+/* line 386, ../../scss/frame.scss */
 #about .about_desc .container .row {
   text-align: center;
 }
-/* line 320, ../../scss/frame.scss */
+/* line 389, ../../scss/frame.scss */
 #about .about_desc .container .row:before, #about .about_desc .container .row:after {
   content: "";
   clear: both;
   display: block;
 }
-/* line 325, ../../scss/frame.scss */
+/* line 394, ../../scss/frame.scss */
 #about .about_desc .container .row .tile {
   position: relative;
   display: block;
@@ -389,7 +465,7 @@ nav.navbar #mainmenu li a:hover {
   text-align: center;
 }
 @media screen and (max-width: 800px) {
-  /* line 325, ../../scss/frame.scss */
+  /* line 394, ../../scss/frame.scss */
   #about .about_desc .container .row .tile {
     width: calc(75%);
     height: auto;
@@ -398,7 +474,7 @@ nav.navbar #mainmenu li a:hover {
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 325, ../../scss/frame.scss */
+  /* line 394, ../../scss/frame.scss */
   #about .about_desc .container .row .tile {
     width: 90%;
     height: auto;
@@ -406,55 +482,55 @@ nav.navbar #mainmenu li a:hover {
     float: none;
   }
 }
-/* line 352, ../../scss/frame.scss */
+/* line 421, ../../scss/frame.scss */
 #about .about_desc .container .row .tile p {
   text-align: left;
   margin-bottom: 10px;
   line-height: 1.5;
 }
-/* line 358, ../../scss/frame.scss */
+/* line 427, ../../scss/frame.scss */
 #about .about_desc .container .row .tile .tile_desc {
   height: calc(100% - 100px);
   width: 100%;
   position: relative;
   padding-top: 20px;
 }
-/* line 365, ../../scss/frame.scss */
+/* line 434, ../../scss/frame.scss */
 #about .about_desc .container .row .tile svg {
   max-width: 100px;
   max-height: 100px;
 }
-/* line 370, ../../scss/frame.scss */
+/* line 439, ../../scss/frame.scss */
 #about .about_desc .container .row .tile:hover {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 379, ../../scss/frame.scss */
+/* line 448, ../../scss/frame.scss */
 section#work {
   background-color: #191919;
   position: relative;
   color: #fff;
   min-height: 100vh;
 }
-/* line 385, ../../scss/frame.scss */
+/* line 454, ../../scss/frame.scss */
 section#work .y_half {
   height: 50vh;
   width: 100%;
 }
-/* line 389, ../../scss/frame.scss */
+/* line 458, ../../scss/frame.scss */
 section#work .y_half:after, section#work .y_half:before {
   content: "";
   clear: both;
 }
 @media screen and (max-width: 800px) {
-  /* line 385, ../../scss/frame.scss */
+  /* line 454, ../../scss/frame.scss */
   section#work .y_half {
     height: auto;
   }
 }
-/* line 398, ../../scss/frame.scss */
+/* line 467, ../../scss/frame.scss */
 section#work .y_half .work {
   position: relative;
   float: left;
@@ -471,32 +547,32 @@ section#work .y_half .work {
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-/* line 409, ../../scss/frame.scss */
+/* line 478, ../../scss/frame.scss */
 section#work .y_half .work:hover {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 800px) {
-  /* line 398, ../../scss/frame.scss */
+  /* line 467, ../../scss/frame.scss */
   section#work .y_half .work {
     width: 50%;
     height: 50vh;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 398, ../../scss/frame.scss */
+  /* line 467, ../../scss/frame.scss */
   section#work .y_half .work {
     height: 50vh;
     width: 100%;
     float: none;
   }
 }
-/* line 425, ../../scss/frame.scss */
+/* line 494, ../../scss/frame.scss */
 section#work .y_half .work .dark_overlay {
   opacity: 0.5;
 }
-/* line 431, ../../scss/frame.scss */
+/* line 500, ../../scss/frame.scss */
 section#work .testimonials {
   background-image: url(https://unsplash.it/1603/803?random);
   background-position: center center;
@@ -506,20 +582,20 @@ section#work .testimonials {
   overflow: hidden;
 }
 @media screen and (max-width: 800px) {
-  /* line 431, ../../scss/frame.scss */
+  /* line 500, ../../scss/frame.scss */
   section#work .testimonials {
     height: 50vh;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 431, ../../scss/frame.scss */
+  /* line 500, ../../scss/frame.scss */
   section#work .testimonials {
     height: 100vh;
     width: 100%;
     float: none;
   }
 }
-/* line 449, ../../scss/frame.scss */
+/* line 518, ../../scss/frame.scss */
 section#work .testimonials .container {
   position: absolute;
   top: 50%;
@@ -530,7 +606,7 @@ section#work .testimonials .container {
   height: 80%;
   z-index: 10;
 }
-/* line 459, ../../scss/frame.scss */
+/* line 528, ../../scss/frame.scss */
 section#work .testimonials .container .test_author {
   font-size: 32px;
   letter-spacing: -1px;
@@ -538,7 +614,7 @@ section#work .testimonials .container .test_author {
   text-transform: uppercase;
   margin: 30px 20px 10px 20px;
 }
-/* line 467, ../../scss/frame.scss */
+/* line 536, ../../scss/frame.scss */
 section#work .testimonials .container .sub_title {
   font-size: 16px;
   line-height: 18px;
@@ -547,11 +623,198 @@ section#work .testimonials .container .sub_title {
   letter-spacing: 3px;
 }
 
-/* line 478, ../../scss/frame.scss */
+/* line 547, ../../scss/frame.scss */
 section#contact {
   background: white;
-  padding: 90px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   float: none;
   width: 100%;
+}
+/* line 554, ../../scss/frame.scss */
+section#contact #contactHeading {
+  text-align: center;
+}
+/* line 557, ../../scss/frame.scss */
+section#contact #contactHeading #contactMail {
+  background: white;
+  padding: 10px;
+  -moz-border-radius: 50% / 50%;
+  -webkit-border-radius: 50% 50%;
+  border-radius: 50% / 50%;
+  border: 10px solid #fa3636;
+  width: 100px;
   height: 100px;
+  display: block;
+  position: relative;
+  margin: auto;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  margin-bottom: 40px;
+}
+/* line 569, ../../scss/frame.scss */
+section#contact #contactHeading #contactMail:hover {
+  border: 5px solid #fa3636;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* line 573, ../../scss/frame.scss */
+section#contact #contactHeading #contactMail svg {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+}
+/* line 585, ../../scss/frame.scss */
+section#contact #contactTable {
+  max-width: 1140px;
+  width: 90%;
+  margin: auto;
+  background: transparent;
+}
+/* line 591, ../../scss/frame.scss */
+section#contact #contactTable tr td {
+  width: 50%;
+  vertical-align: top;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+/* line 598, ../../scss/frame.scss */
+section#contact #contactTable tr td input[type="text"] {
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  outline: none;
+  padding: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 0px 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/* line 614, ../../scss/frame.scss */
+section#contact #contactTable tr td textarea {
+  width: 100%;
+  min-height: 100px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  outline: none;
+  padding: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 0px 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  resize: none;
+  overflow: hidden;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 635, ../../scss/frame.scss */
+section#contact #contactTable tr td input:focus + label, section#contact #contactTable tr td textarea:focus + label {
+  top: 0;
+  color: #191919;
+  font-weight: normal;
+  font-size: 14px;
+}
+/* line 642, ../../scss/frame.scss */
+section#contact #contactTable tr td input:valid + label, section#contact #contactTable tr td textarea:valid + label {
+  top: 0;
+  color: #191919;
+  font-weight: normal;
+  font-size: 14px;
+}
+/* line 650, ../../scss/frame.scss */
+section#contact #contactTable tr td label {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  font-size: 18px;
+}
+/* line 659, ../../scss/frame.scss */
+section#contact #contactTable tr td textarea + label {
+  position: absolute;
+  left: 30px;
+  top: 22px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  font-size: 18px;
+}
+/* line 667, ../../scss/frame.scss */
+section#contact #contactTable tr td input[type="submit"] {
+  color: #fa3636;
+  background: white;
+  border: 1px solid #fa3636;
+  cursor: pointer;
+  font-size: 18px;
+}
+/* line 674, ../../scss/frame.scss */
+section#contact #contactTable tr td input[type="submit"]:hover {
+  background: #fa3636;
+  color: white;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* line 680, ../../scss/frame.scss */
+section#contact #contactTable tr td input[type="submit"]:active {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/* line 685, ../../scss/frame.scss */
+section#contact #contactTable tr td p {
+  margin: 20px auto;
+  line-height: 1.5;
+}
+/* line 689, ../../scss/frame.scss */
+section#contact #contactTable tr td p a {
+  color: #fa3636;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+  background: white;
+}
+/* line 696, ../../scss/frame.scss */
+section#contact #contactTable tr td p a:hover {
+  color: white;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #fa3636;
+}
+/* line 702, ../../scss/frame.scss */
+section#contact #contactTable tr td p a:active {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 712, ../../scss/frame.scss */
+footer {
+  background: #191919;
+  padding: 60px 0px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
 }

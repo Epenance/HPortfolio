@@ -1,4 +1,24 @@
 $(function() {
+  var txt = $('#contactMessage'),
+  hiddenDiv = $(document.createElement('div')),
+  content = null;
+
+  txt.addClass('txtstuff');
+  hiddenDiv.addClass('hiddendiv common');
+
+  $('body').append(hiddenDiv);
+  txt.on('keyup', function () {
+  $(hiddenDiv).css('width', $(this).width())
+    content = $(this).val();
+
+    content = content.replace(/\n/g, '<br>');
+    hiddenDiv.html(content + '<br class="lbr">');
+
+    $(this).css('height', hiddenDiv.height());
+  })
+});
+
+$(function() {
   var iOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
   if(iOS){
 
@@ -18,7 +38,7 @@ $(function() {
   }
 })
 
-$(function() {
+/*$(function() {
   var querie = 800;
   var windowWidth = $(window).width();
   var rightWidth = $(".about_text").height() + 100;
@@ -26,9 +46,9 @@ $(function() {
   if(windowWidth > querie) {
     $(".about_left").height(rightWidth);
   }else {
-    $(".about_left").height(450);
+    $(".about_left").height();
   }
-})
+})*/
 
 $(function () {
   $(window).scroll(function () {
@@ -51,13 +71,8 @@ $( window ).resize(function() {
   var windowWidth = $(window).width();
   var querie = 800;
   var menuClass = $(".navbar").hasClass("navOpen");
-  var rightWidth = $(".about_text").height() + 100;
-
-  if(windowWidth > querie) {
-    $(".about_left").height(rightWidth);
-  }else {
-    $(".about_left").height(450);
-  }
+  //var rightWidth = $(".about_text").height() + 100;
+  //$(".about_left").height(rightWidth);
 
   if(windowWidth > querie && menuClass) {
     $(".navbar").css("height","")

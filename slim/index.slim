@@ -19,8 +19,8 @@ html
             a href="#aboutScroll" About
           li
             a href="#work" Work
-          li
-            a href="#" Resumé
+          //li
+            //a href="#" Resumé
           li
             a href="#contact" Contact
     section#top_content
@@ -29,14 +29,14 @@ html
         .content
           h1 HEY, I'M a frontend webdeveloper
           p I turn static designs into fully functional & beautiful websites. I have a passion for CSS transitions and animations.
-          a.btn.btn_white href="#" Lets talk
+          a.btn.btn_white href="#contact" Lets talk
       .dark_overlay
     section#about
       .row
         .about_left
           .content_center
             .content
-              a.btn.btn_white href="#" Contact
+              a.btn.btn_white href="#contact" Contact
           .dark_overlay
         #aboutScroll.about_text
           h2 I am an <span class="bold">creative</span> frontend web developer with specialization in <span class="bold">responsive</span> design.
@@ -100,32 +100,77 @@ html
         .work style="background-image: url(img/content/preadly.jpg);"
           .content_center
             .content
-              a.btn.btn_white href="#" Preadly
+              a.btn.btn_white href="work.php?project=preadly" Preadly
           .dark_overlay
         .work style="background-image: url(img/content/washa.jpg);"
           .content_center
             .content
-              a.btn.btn_white href="#" Washa
+              a.btn.btn_white href="work.php?project=washa" Washa
           .dark_overlay
         .work style="background-image: url(img/content/pdm.jpg);"
           .content_center
             .content
-              a.btn.btn_white href="#" Partnerdialog
+              a.btn.btn_white href="work.php?project=partnerdialog" Partnerdialog
           .dark_overlay
         .work style="background-image: url(img/content/pls.jpg);"
           .content_center
             .content
-              a.btn.btn_white href="#" Project Lightstyle
+              a.btn.btn_white href="work.php?project=projectlightstyle" Project Lightstyle
           .dark_overlay
-      .y_half.row.testimonials
-        .dark_overlay
-        .container
+      .y_half.row
+        .work style="background-image: url(img/content/hoberthovers.jpg);"
           .content_center
             .content
-              p "Nam neque magna, tempus eu dictum vel, laoreet porta lorem. Proin eget lacus efficitur, venenatis odio quis, luctus justo. Cras suscipit nisl a tempor scelerisque. Ut blandit sed magna a cursus. Pellentesque lobortis ligula vel orci eleifend elementum. Phasellus tempor nisl ut nisi aliquam ornare id eget lacus."
-              h2.test_author Bo <span class="bold">Brink</span>
-              p.sub_title Marketing Director - <span class="bold">Partnerdialog</span>
+              a.btn.btn_white href="work.php?project=hoberthovers" Hobert Hovers
+          .dark_overlay
+        .work style="background-image: url(img/content/mindfullife2.jpg);"
+          .content_center
+            .content
+              a.btn.btn_white href="work.php?project=mindfullife" Mindfullife
+          .dark_overlay
+        .work style="background-image: url(img/content/gamestation.jpg);"
+          .content_center
+            .content
+              a.btn.btn_white href="work.php?project=gamestation"
+                |Game-Station
+          .dark_overlay
+        .work style="background-image: url(img/content/you.jpg);"
+          .content_center
+            .content
+              a.btn.btn_white href="#contact" You?
+          .dark_overlay
     section#contact
+      #contactHeading.row
+        a#contactMail href="mailto:info@dosh.dk"
+          <?php include('svg/mail.php') ?>
+      .row
+        form
+          table#contactTable
+            tr
+              td
+                input#contactFirstName name="contactFirstName" type="text" required=""
+                label for="contactFirstName" First Name
+              td
+                input#contactLastName name="contactLastName" type="text" required=""
+                label for="contactLastName" Last Name
+              tr
+              td
+                input#contactEmail name="contactEmail" type="text" required=""
+                label for="contactEmail" Email
+              td
+                input#contactPhone name="contactPhone" type="text" required=""
+                label for="contactPhone" Phone
+
+            tr
+              td colspan="2"
+                textarea#contactMessage name="contactMessage" type="text" required=""
+                label for="contactMessage" Message
+            tr
+              td colspan="2"
+                input.btn type="submit" value="send message"
+                p.sub_title Or send me a mail at </br><a class="btn" href="mailto:info@dosh.dk">info@dosh.dk</a>
+    footer
+      |© COPYRIGHT 2015 Martin Hobert ALL RIGHTS RESERVED
 
     script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
     script src="js/fancy.js"

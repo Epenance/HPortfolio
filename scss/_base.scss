@@ -8,6 +8,7 @@
   display:inline-block;
   @include trans;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  background:rgba(0, 0, 0, 0.15);
   &:hover {
     background:$second-color;
     border-color:transparent!important;
@@ -47,6 +48,7 @@
   margin: 0 auto;
   width: 100%;
   z-index: 3;
+  overflow:hidden;
 
   .content {
     padding: 10px 20px;
@@ -68,6 +70,11 @@
   letter-spacing: -2px;
   margin-top: 0;
   text-transform:uppercase;
+  @include trans;
+
+  @media screen and (max-width: $break-medium) {
+    font-size: 24px;
+  }
 }
 
 .sub_title {
@@ -76,4 +83,22 @@
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+.hiddendiv {
+  width:100%;
+  min-height:100px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  outline: none;
+  padding: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding:0px 20px;
+  font-size:18px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  display:none;
 }
