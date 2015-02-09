@@ -1,3 +1,4 @@
+<?php include("functions.php") ?>
 doctype html
 html
   head
@@ -27,7 +28,7 @@ html
 
       .content_center
         .content
-          h1 HEY, I'M a frontend webdeveloper
+          h1 Hey, I'm a frontend webdeveloper
           p I turn static designs into fully functional & beautiful websites. I have a passion for CSS transitions and animations.
           a.btn.btn_white href="#contact" Lets talk
       .dark_overlay
@@ -39,7 +40,7 @@ html
               a.btn.btn_white href="#contact" Contact
           .dark_overlay
         #aboutScroll.about_text
-          h2 I am an <span class="bold">creative</span> frontend web developer with specialization in <span class="bold">responsive</span> design.
+          h2 I am a <span class="bold">creative</span> frontend web developer with specialization in <span class="bold">responsive</span> design.
           p Ive been around and about, I've worked with many different languages such as Ruby on Rails, PHP, C#, HTML5, CSS3, JavaScript and more. I started out as a overall programmer who did both front- and backend work for my agency, taking PSD's and turning them into actual functional websites.
           p I later on realized how much I enjoyed Frontend developing and figuring out ways to "communicate" with my visitors, proudly showing them around my websites with CTA placements.
           p I love challenging myself and always try to learn new things when doing a project, as well as reading a ton of articles in order to keep up with the newest technologies.
@@ -144,7 +145,7 @@ html
         a#contactMail href="mailto:info@dosh.dk"
           <?php include('svg/mail.php') ?>
       .row
-        form
+        form action="" method="post"
           table#contactTable
             tr
               td
@@ -167,10 +168,13 @@ html
                 label for="contactMessage" Message
             tr
               td colspan="2"
-                input.btn type="submit" value="send message"
+                input.btn name="contactSubmit" type="submit" value="send message"
                 p.sub_title Or send me a mail at </br><a class="btn" href="mailto:info@dosh.dk">info@dosh.dk</a>
     footer
       |© COPYRIGHT 2015 Martin Hobert ALL RIGHTS RESERVED
 
     script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
     script src="js/fancy.js"
+    script src="js/tokenizer.js"
+    script src="js/parser.js"
+    script src="js/minvh.js"

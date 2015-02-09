@@ -1,3 +1,4 @@
+<?php include("functions.php") ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -34,7 +35,7 @@
       <div class="content_center">
         <div class="content">
           <h1>
-            HEY, I'M a frontend webdeveloper
+            Hey, I'm a frontend webdeveloper
           </h1>
           <p>
             I turn static designs into fully functional & beautiful websites. I have a passion for CSS transitions and animations.
@@ -56,7 +57,7 @@
         </div>
         <div class="about_text" id="aboutScroll">
           <h2>
-            I am an <span class="bold">creative</span> frontend web developer with specialization in <span class="bold">responsive</span> design.
+            I am a <span class="bold">creative</span> frontend web developer with specialization in <span class="bold">responsive</span> design.
           </h2>
           <p>
             Ive been around and about, I've worked with many different languages such as Ruby on Rails, PHP, C#, HTML5, CSS3, JavaScript and more. I started out as a overall programmer who did both front- and backend work for my agency, taking PSD's and turning them into actual functional websites.
@@ -255,7 +256,7 @@
         <a href="mailto:info@dosh.dk" id="contactMail"><?php include('svg/mail.php') ?></a>
       </div>
       <div class="row">
-        <form>
+        <form action="" method="post">
           <table id="contactTable">
             <tr>
               <td>
@@ -279,7 +280,7 @@
             </tr>
             <tr>
               <td colspan="2">
-                <input class="btn" type="submit" value="send message" />
+                <input class="btn" name="contactSubmit" type="submit" value="send message" />
                 <p class="sub_title">
                   Or send me a mail at </br><a class="btn" href="mailto:info@dosh.dk">info@dosh.dk</a>
                 </p>
@@ -294,5 +295,8 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/fancy.js"></script>
+    <script src="js/tokenizer.js"></script>
+    <script src="js/parser.js"></script>
+    <script src="js/minvh.js"></script>
   </body>
 </html>

@@ -47,7 +47,7 @@
     </section>
     <section id="about">
       <div class="row">
-        <div class="about_left">
+        <div class="about_left view_site">
           <div class="content_center">
             <div class="content">
               <a class="btn btn_white" href="http://www.partnerdialog.dk">View site</a>
